@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- my css -->
+    <style>
+      ul {
+        background-color: black;
+      }
+
+      .a {
+        text-align: center;
+        margin-left: 313px;
+      }
+    </style>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -53,6 +64,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- contact card w mail to -->
     <div class="container">
       <div class="row">
         <div class="col-lg-10 col-xl-9 mx-auto">
@@ -62,7 +74,12 @@
             </div>
             <div class="card-body">
               <h5 class="card-title text-center">Contact Me</h5>
-              <form class="form-signin">
+              <form
+                action="mailto:kai6curtis@gmail.com"
+                method="get"
+                enctype="text/plain"
+                class="form-signin"
+              >
                 <div class="form-label-group">
                   <input
                     type="text"
@@ -91,23 +108,21 @@
                 <button
                   class="btn btn-lg btn-primary btn-block text-uppercase"
                   type="submit"
+                  value="send"
                 >
                   Submit
                 </button>
 
                 <hr class="my-4" />
-                <button
-                  class="btn btn-lg btn-google btn-block text-uppercase"
-                  type="submit"
+
+                <!-- facebook link -->
+                <a
+                  class="a"
+                  style="text-align: center"
+                  href="https://www.facebook.com/profile.php?id=100008596683465"
                 >
-                  <i class="fab fa-google mr-2"></i> Contact with Google
-                </button>
-                <button
-                  class="btn btn-lg btn-facebook btn-block text-uppercase"
-                  type="submit"
+                  Contact with Facebook</a
                 >
-                  <i class="fab fa-facebook-f mr-2"></i> Contact with Facebook
-                </button>
               </form>
             </div>
           </div>
