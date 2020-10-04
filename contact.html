@@ -6,11 +6,6 @@
       ul {
         background-color: black;
       }
-
-      .a {
-        text-align: center;
-        margin-left: 313px;
-      }
     </style>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -44,8 +39,6 @@
     </ul>
   </head>
   <body>
-    <h1></h1>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -65,14 +58,14 @@
     ></script>
 
     <!-- contact card w mail to -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 col-xl-9 mx-auto">
-          <div class="card card-signin flex-row my-5">
-            <div class="card-img-left d-none d-md-flex">
+    <main class="container">
+      <section class="row">
+        <article class="col-lg-10 col-xl-9 mx-auto">
+          <summary class="card card-signin flex-row my-5">
+            <figure class="card-img-left d-none d-md-flex">
               <!-- Background image for card set in CSS! -->
-            </div>
-            <div class="card-body">
+            </figure>
+            <figure class="card-body">
               <h5 class="card-title text-center">Contact Me</h5>
               <form
                 action="mailto:kai6curtis@gmail.com"
@@ -80,7 +73,7 @@
                 enctype="text/plain"
                 class="form-signin"
               >
-                <div class="form-label-group">
+                <figure class="form-label-group">
                   <input
                     type="text"
                     id="inputUserame"
@@ -90,9 +83,9 @@
                     autofocus
                   />
                   <label for="inputUserame"></label>
-                </div>
+                </figure>
 
-                <div class="form-label-group">
+                <figure class="form-label-group">
                   <input
                     type="email"
                     id="inputEmail"
@@ -101,7 +94,7 @@
                     required
                   />
                   <label for="inputEmail"></label>
-                </div>
+                </figure>
 
                 <hr />
 
@@ -117,17 +110,14 @@
 
                 <!-- facebook link -->
                 <a
-                  class="a"
-                  style="text-align: center"
                   href="https://www.facebook.com/profile.php?id=100008596683465"
-                >
-                  Contact with Facebook</a
+                  ><p style="text-align: center">Contact with Facebook</p></a
                 >
               </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </figure>
+          </summary>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
