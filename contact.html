@@ -16,10 +16,10 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Contact</title>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Kai Curtis</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -34,14 +34,6 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a
-              class="nav-link"
-              href="C:\Users\kaiac\Desktop\responsive-portfolio\index.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -68,22 +60,11 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
       </div>
     </nav>
   </head>
   <body>
-    <h1>Contact</h1>
+    <h1></h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -102,5 +83,67 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+          <div class="card card-signin flex-row my-5">
+            <div class="card-img-left d-none d-md-flex">
+              <!-- Background image for card set in CSS! -->
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Contact Me</h5>
+              <form class="form-signin">
+                <div class="form-label-group">
+                  <input
+                    type="text"
+                    id="inputUserame"
+                    class="form-control"
+                    placeholder="Name"
+                    required
+                    autofocus
+                  />
+                  <label for="inputUserame"></label>
+                </div>
+
+                <div class="form-label-group">
+                  <input
+                    type="email"
+                    id="inputEmail"
+                    class="form-control"
+                    placeholder="Email address"
+                    required
+                  />
+                  <label for="inputEmail"></label>
+                </div>
+
+                <hr />
+
+                <button
+                  class="btn btn-lg btn-primary btn-block text-uppercase"
+                  type="submit"
+                >
+                  Submit
+                </button>
+
+                <hr class="my-4" />
+                <button
+                  class="btn btn-lg btn-google btn-block text-uppercase"
+                  type="submit"
+                >
+                  <i class="fab fa-google mr-2"></i> Contact with Google
+                </button>
+                <button
+                  class="btn btn-lg btn-facebook btn-block text-uppercase"
+                  type="submit"
+                >
+                  <i class="fab fa-facebook-f mr-2"></i> Contact with Facebook
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
