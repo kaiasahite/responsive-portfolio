@@ -5,7 +5,7 @@
     <style>
       img {
         width: 100%;
-        height: auto;
+        height: 75vh;
       }
 
       ul {
@@ -15,6 +15,54 @@
       .h1 {
         margin: 40 px;
         padding: 40px;
+      }
+      article {
+        margin-top: 30px;
+        height: 75vh;
+        width: auto;
+        overflow: auto;
+      }
+      button {
+        width: 200px;
+        height: 50px;
+        display: inline-block;
+      }
+
+      .center {
+        margin: 0;
+        position: absolute;
+
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      embed {
+        margin-top: 30px;
+        width: 1200px;
+        height: 75vh;
+        overflow: scroll;
+      }
+      #planner {
+        margin-top: 50px;
+      }
+      .project1 {
+        margin-top: 60px;
+      }
+      .homeWork1,
+      .homeWork2 {
+      }
+
+      .flex-parent {
+        display: flex;
+      }
+
+      .jc-center {
+        justify-content: center;
+      }
+
+      button.margin-right {
+        margin-right: 20px;
       }
     </style>
 
@@ -53,25 +101,39 @@
     <h1 class="h1" style="text-align: center">Portfolio</h1>
     <main class="container">
       <section class="row">
-        <article class="col-xs">
-          <!-- <section style="height:700px;width:1200px;overflow:auto;"> -->
-
-          <img src="images/Photo(13).jpg" alt="Yougin" />
-          <img src="images/IMG_1179.JPG" alt="Cute Couple" />
-          <img src="images/IMG_0377.JPG" alt="frontside air" />
-          <img src="images/IMG_0519.PNG" alt="Rafting" />
-          <img src="images/IMG_0405.JPG" alt="Devils Marbleyard" />
-          <img src="images/IMG_0566.JPG" alt="kickflip" />
+        <section class="center">
+          <button class="resume">Resume</button>
+          <button class="project">Group Projects</button>
+          <button class="homeWork">Homework</button>
+          <button class="pictures">Pictures</button>
+        </section>
+        <embed class="embed" src="resume.pdf#zoom=100" />
+        <button class="project1 center">Project 1 repo</button>
+        <div class="flex-parent jc-center">
+          <button class="homeWork1">homeWork 1 repo</button>
+          <button class="homeWork2 margin-right">homeWork 2 repo</button>
+        </div>
+        <article class="col-xs funPics">
+          <img src="images\pictures\Photo(13).JPG" alt="Yougin" />
+          <img src="images\pictures\IMG_1179.JPG" alt="Cute Couple" />
+          <img src="images\pictures\IMG_0377.JPG" alt="frontside air" />
+          <img src="images\pictures\IMG_0519.PNG" alt="Rafting" />
+          <img src="images\pictures\IMG_0405.JPG" alt="Devils Marbleyard" />
+          <img src="images\pictures\IMG_0566.JPG" alt="kickflip" />
         </article>
+
+        <img id="planner" src="images\projects\Family-Planner_MainPage.png" />
+        <img id="homeWork" src="images\homework\Capture10.JPG" />
       </section>
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -82,5 +144,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
