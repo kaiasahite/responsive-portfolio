@@ -22,6 +22,7 @@
         width: auto;
         overflow: auto;
       }
+
       button {
         width: 200px;
         height: 50px;
@@ -43,19 +44,26 @@
         height: 75vh;
         overflow: scroll;
       }
-      #planner {
+
+      #planner,
+      #whatsnotapp {
         margin-top: 150px;
       }
-      .project1 {
+
+      .project1,
+      .project2 {
         margin-top: 60px;
+        margin-left: 475px;
       }
+
       .homeWork1,
-      .homeWork2 {
+      .homeWork2,
+      .homeWork3 {
         margin-top: 35px;
         position: relative;
         display: inline-block;
 
-        left: 91.25%;
+        left: 42.5%;
       }
     </style>
 
@@ -101,10 +109,12 @@
           <button class="pictures">Pictures</button>
         </section>
         <embed class="embed" src="resume.pdf#zoom=100" />
-        <button class="project1 center">Project 1 repo</button>
+        <button class="project1">Project 1 repo</button>
+
         <div class="flex-parent jc-center">
-          <button class="homeWork1">homeWork 1 repo</button>
-          <button class="homeWork2">homeWork 2 repo</button>
+          <button class="homeWork1">Day planner repo</button>
+          <button class="homeWork2">Skateboard quiz repo</button>
+          <button class="homeWork3">READ.md generator repo</button>
         </div>
         <article class="col-xs funPics">
           <img src="images\pictures\Photo(13).JPG" alt="Yougin" />
@@ -116,7 +126,10 @@
         </article>
 
         <img id="planner" src="images\projects\Family-Planner_MainPage.png" />
-        <img id="homeWork" src="images\homework\Capture10.JPG" />
+
+        <button class="project2">Project 2 repo</button>
+
+        <img id="whatsnotapp" src="images\projects\whatsnotapp.png" />
       </section>
     </main>
     <!-- Optional JavaScript -->
